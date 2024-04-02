@@ -94,6 +94,10 @@
   name: CentCom encryption key box
   description: A very highrisk box with encryption keys of the bosses of all the bosses.
   components:
+  - type: Sprite
+    layers:
+      - state: box_command
+      - state: nano_label
   - type: Item
     size: 15
   - type: Storage
@@ -102,36 +106,3 @@
     contents:
       - id: EncryptionKeyCentCom
         amount: 3
-
-- type: entity
-  id: SpecialMedipen
-  parent: CombatMedipen
-  name: special medipen
-  description: A medipen for special big shots in trouble.
-  components:
-  - type: Item
-    size: 3
-
-- type: entity
-  id: MedipenCase
-  parent: BaseStorageItem
-  name: medipen case
-  components:
-  - type: Sprite
-    sprite: Imperial/TFG/Containers/medipenCase.rsi
-    state: icon
-  - type: Item
-    size: 16
-  - type: Storage
-    capacity: 15
-
-- type: entity
-  id: MedipenCaseFilled
-  parent: MedipenCase
-  name: medipen case
-  suffix: Filled
-  components:
-  - type: StorageFill
-    contents:
-      - id: SpecialMedipen
-        amount: 5

@@ -74,6 +74,15 @@
     clothingPrototype: ClothingOuterHardsuitCCAgent
     requiredSlot: innerClothing
     slot: outerClothing
+  # - type: QualityOfItem
+  #   qualityWeights:
+  #     0: 0
+  #     1: 0
+  #     2: 0
+  #     3: 80
+  #     4: 20
+  #     5: 0
+  #     6: 0
 
 - type: entity
   noSpawn: true
@@ -87,6 +96,8 @@
     state: icon
   - type: Clothing
     sprite: Imperial/TFG/RepresentativeStuff/agentHardsuit.rsi
+    equipSound: /Audio/Imperial/Modsuits/ballin.ogg
+    unequipSound: /Audio/Imperial/Modsuits/ballout.ogg
   - type: PressureProtection
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000
@@ -110,6 +121,15 @@
     reflectProb: 0.3
     reflects:
       - NonEnergy
+  # - type: QualityOfItem
+  #   qualityWeights:
+  #     0: 0
+  #     1: 0
+  #     2: 0
+  #     3: 80
+  #     4: 20
+  #     5: 0
+  #     6: 0
 
 - type: entity
   noSpawn: true
@@ -122,6 +142,8 @@
     sprite: Imperial/TFG/RepresentativeStuff/agentHelmet.rsi
   - type: Clothing
     sprite: Imperial/TFG/RepresentativeStuff/agentHelmet.rsi
+    equipSound: /Audio/Imperial/Modsuits/ballin.ogg
+    unequipSound: /Audio/Imperial/Modsuits/ballout.ogg
   - type: PointLight
     color: green
   - type: PressureProtection
@@ -134,6 +156,15 @@
         Slash: 0.85
         Piercing: 0.85
         Heat: 0.85
+  # - type: QualityOfItem
+  #   qualityWeights:
+  #     0: 0
+  #     1: 0
+  #     2: 0
+  #     3: 80
+  #     4: 20
+  #     5: 0
+  #     6: 0
 #CentCom Agent suit END
 
 - type: entity
